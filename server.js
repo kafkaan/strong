@@ -18,8 +18,10 @@ const authenticateAdmin = (req, res, next) => {
 };
 
 
+
+
 app.use(express.json());
-app.use("/api/scores", require("./routes/contactRoutes"))
+app.use("/cd", require("./routes/contactRoutes"))
 
 app.post("/admin", authenticateAdmin, (req, res) => {
   // Code pour la page d'administrationr
